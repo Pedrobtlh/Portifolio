@@ -1,0 +1,123 @@
+.container {
+  margin-top: 8rem;
+  margin-left: 4rem;
+  height: 60vh;
+}
+
+.container h2 {
+  font-weight: 800;
+  font-size: 40px;
+  color: #fff;
+  border: 1px solid #9400ff;
+  border-radius: 5px;
+  width: 15%;
+  padding: 10px 30px 15px;
+  font-family: "Oswald", sans-serif;
+}
+
+.container hr {
+  width: 60%;
+  margin-left: 0;
+}
+
+.containerProjetos {
+  width: 100%;
+  max-width: 1300px;
+  min-height: 30vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: grab;
+  overflow: hidden;
+}
+
+.inner {
+  display: flex;
+}
+
+.images {
+  min-height: 200px;
+  min-width: 400px;
+  padding: 14px;
+}
+
+.images img {
+  width: 100%;
+  height: 80%;
+  border-radius: 12px;
+  pointer-events: none;
+}
+
+.images p {
+  font-family: "Oswald", sans-serif;
+  font-size: 22px;
+  text-align: center;
+  transition: 1s;
+}
+
+.images p:hover {
+  color: #9400ff;
+}
+
+.images a {
+  text-decoration: none;
+}
+
+@media (max-width: 1275px) {
+  .container h2 {
+    width: fit-content;
+  }
+}
+
+@media (max-width: 768px) {
+  .images img {
+    width: 80%;
+    height: 80%;
+    border-radius: 12px;
+    pointer-events: none;
+  }
+
+  .images p {
+    margin-right: 3rem;
+  }
+}
+
+@media (max-width: 425px) {
+  .container {
+    margin-left: 0.8rem;
+  }
+
+  .containerProjetos {
+    width: 100%;
+    max-width: 90vw;
+    min-height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: grab;
+    overflow: hidden;
+  }
+
+  .container h2 {
+    font-weight: 800;
+    font-size: 30px;
+  }
+
+  .container hr {
+    width: 90%;
+    margin-left: 0;
+  }
+
+  .images {
+    min-height: 100px;
+    min-width: 250px;
+    padding: 14px;
+  }
+
+  .images img {
+    width: 100%;
+    height: 80%;
+    border-radius: 12px;
+    pointer-events: none;
+  }
+}
